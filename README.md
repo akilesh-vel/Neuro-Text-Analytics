@@ -50,9 +50,7 @@ NeuroText-Analytics
 ├── style.css
 ├── script.js
 └── README.md
-```
 
----
 
 ## ▶️ How to Run
 
@@ -96,7 +94,7 @@ Through this project, I practiced:
 Akilesh M V
 
 - Frontend Developer (HTML, CSS, JavaScript)
-- Email: **akileshvel21@gmail.com**
+- Email: akileshvel21@gmail.com
 
 
 - Dark / Light Mode
