@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NeuroText Analytics | Client-Side Text Analysis Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>
+                NeuroText <span>Analytics</span>
+            </h1>
+
+            <p>
+                Client-Side Text Analysis Dashboard using HTML5, CSS3 & JavaScript
+            </p>
+
+        </header>
+
+        <!-- ================= INPUT SECTION ================= -->
+
+        <section class="input-box">
+
+            <label for="text-input">
+                Enter Your Text
+            </label>
+
+            <textarea
+                id="text-input"
+                placeholder="Type or paste your text here..."></textarea>
+
+            <div class="buttons">
+
+                <button id="analyze-btn">
+                    Analyze
+                </button>
+
+                <button id="copy-btn">
+                    Copy
+                </button>
+
+                <button id="download-btn">
+                    Download Report
+                </button>
+
+                <button id="remove-space-btn">
+                    Remove Extra Spaces
+                </button>
+
+                <button id="clear-btn">
+                    Clear
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ================= TEXT STATISTICS ================= -->
+
+        <h2 class="section-title">
+            Text Statistics
+        </h2>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Characters</h3>
+                <div id="char-count" class="value">0</div>
+            </div>
+
+            <div class="card">
+                <h3>Words</h3>
+                <div id="word-count" class="value">0</div>
+            </div>
+
+            <div class="card">
+                <h3>Sentences</h3>
+                <div id="sentence-count" class="value">0</div>
+            </div>
+
+            <div class="card">
+                <h3>Paragraphs</h3>
+                <div id="paragraph-count" class="value">0</div>
+            </div>
+
+        </section>
+
+        <!-- ================= READING ANALYSIS ================= -->
+
+        <h2 class="section-title">
+            Reading Analysis
+        </h2>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Reading Time</h3>
+                <div id="reading-time" class="value">
+                    0 min
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Speaking Time</h3>
+                <div id="speaking-time" class="value">
+                    0 min
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= WORD ANALYSIS ================= -->
+
+        <h2 class="section-title">
+            Word Analysis
+        </h2>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Longest Word</h3>
+                <div id="longest-word" class="value small-text">
+                    -
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Average Word Length</h3>
+                <div id="average-word" class="value">
+                    0
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Numbers</h3>
+                <div id="number-count" class="value">
+                    0
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Special Characters</h3>
+                <div id="special-count" class="value">
+                    0
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= SENTIMENT ANALYSIS ================= -->
+
+        <h2 class="section-title">
+            Sentiment Analysis
+        </h2>
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h3>Sentiment</h3>
+
+                <div
+                    id="sentiment-result"
+                    class="value neutral">
+
+                    😐 Neutral
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Sentiment Score</h3>
+
+                <div
+                    id="sentiment-score"
+                    class="value">
+
+                    0
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <p>
+
+                Developed by
+                <strong>Akilesh M V</strong>
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
